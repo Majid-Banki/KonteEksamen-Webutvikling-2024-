@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Top Buttons -->
+      <section class="top-bar">
+        <section class="search-container">
+          <i class="fas fa-search search-icon" id="search-icon"></i>
+          <div class="search-panel" id="search-panel">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <h1>What are you looking for?</h1>
+            <div>
+              <input type="text" placeholder="Enter your keywords..." />
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+        </section>
+        <button class="btn kontabtn">Opprett en konto</button>
+        <button class="btn">
+          <i class="fa-regular fa-circle-user"></i> <span>Min side</span>
+        </button>
+      </section>
+
+      <!-- Logo and Navigation -->
+      <section class="logo-nav">
+        <!-- Logo -->
+        <span class="logo">
+          <img src="images/fav.png" alt="Travel Logo" />
+        </span>
+
+        <aside class="for_mobile user_mbldetails">
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </aside>
+
+        <!-- Navigation Links -->
+        <nav class="nav-links">
+          <ul>
+            <li><a href="#">Tips og inspirasjon</a></li>
+            <li><a href="/hotel.html">Hotell</a></li>
+            <li><a href="/">Fly</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <section class="swiper-container">
+        <article class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <section class="swiper-slide">
+            <section class="slider-item">
+              <img src="images/landscape-2016308_640.jpg" alt="Pool Image" />
+              <aside class="like-icon">
+                <i class="fas fa-heart"></i>
+              </aside>
+              <aside class="image-counter">
+                <i class="fas fa-images"></i> 49
+              </aside>
+            </section>
+          </section>
+          <!-- Slide 2 -->
+          <section class="swiper-slide">
+            <section class="slider-item">
+              <img src="images/landscape-2016308_640.jpg" alt="Pool Image" />
+              <aside class="like-icon">
+                <i class="fas fa-heart"></i>
+              </aside>
+              <aside class="image-counter">
+                <i class="fas fa-images"></i> 32
+              </aside>
+            </section>
+          </section>
+          <!-- Add more slides as needed -->
+        </article>
+
+        <!-- Navigation buttons -->
+        <aside class="swiper-button-next"></aside>
+        <aside class="swiper-button-prev"></aside>
+      </section>
+
+      <section class="layout hide_mobile">
+        <!-- Left Section -->
+        <article class="left-section">
+          <figure class="big-image">
+            <img
+              src="images/landscape-2016308_640.jpg"
+              alt="Large Image 1"
+              class="big-image"
+            />
+          </figure>
+          <figure class="small-images">
+            <img
+              src="images/beach-6514331_640.jpg"
+              alt="Small Image 1"
+              class="small-image"
+            />
+            <img
+              src="images/holiday-2733322_1280.jpg"
+              alt="Small Image 2"
+              class="small-image"
+            />
+          </figure>
+        </article>
+
+        <!-- Right Section -->
+        <article class="right-section">
+          <figure class="top-images">
+            <img
+              src="images/beach-1836467_640.jpg"
+              alt="Small Image 3"
+              class="top-image"
+            />
+            <img
+              src="images/sea-4768869_1920.jpg"
+              alt="Small Image 4"
+              class="top-image"
+            />
+          </figure>
+          <figure class="bottom-image">
+            <img
+              src="images/beach-666122_640.jpg"
+              alt="Large Image 2"
+              class="bottom-image"
+            />
+          </figure>
+        </article>
+      </section>
+      <section class="main-tabs">
+        <nav class="tabs">
+          <article class="tab active" id="overview-tab" data-tab="overview">
+            Oversikt
+          </article>
+
+          <article class="tab" id="facilities-tab" data-tab="facilities">
+            Fasiliteter
+          </article>
+
+          <article class="tab" id="rooms-tab" data-tab="rooms">Rom</article>
+        </nav>
+
+        <section class="tab_content active-content" id="overview">
+          <section class="details">
+            <section class="left_details">
+              <h2>Parga Beach</h2>
+              <p>
+                <span class="badge">8.9</span>
+                <span class="text-muted">Fantastisk</span>
+              </p>
+              <p><a href="#">Se alle anmeldelsene ></a></p>
+              <h2>Fasiliteter</h2>
+              <p>
+                Parga Beach tilbyr et tilsynelatende uuttømmelig utvalg av sport
+                og aktiviteter...
+              </p>
+              <ul>
+                <li><i class="fas fa-paw"></i>Kjæledyr-vennlig</li>
+                <li><i class="fas fa-concierge-bell"></i> Romservice</li>
+                <li><i class="fas fa-mug-hot"></i> Frokost</li>
+                <li><i class="fas fa-martini-glass"></i> Bar</li>
+                <li><i class="fas fa-spa"></i> Spa</li>
+                <li><i class="fas fa-dumbbell"></i> Treningssenter</li>
+              </ul>
+              <p><a href="#">Se alle anmeldelsene ></a></p>
+            </section>
+            <section class="right_details">
+              <h2>Utforsk området</h2>
+              <aside class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112136.7006817032!2d77.21014753906252!3d28.56159700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce40cab1c280f%3A0xb01aeeca930b6506!2sTownhouse%20OAK%20The%20ICS%20Hotel%20Okhla!5e0!3m2!1sen!2sin!4v1737091812722!5m2!1sen!2sin"
+                  width="100%"
+                  height="350"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </aside>
+            </section>
+          </section>
+
+          <section class="room-listing">
+            <article class="heading">
+              <ssection>
+                <h2>8733 kr</h2>
+                <p>2394 kr per natt</p>
+              </ssection>
+
+              <button class="btn btn-primary">Velg rom</button>
+            </article>
+
+            <section class="room-cards">
+              <!-- Room 1 -->
+              <article class="room-card">
+                <img
+                  src="images/beach-6514331_640.jpg"
+                  alt="Room Image"
+                  class="room-image"
+                />
+                <section class="room-details">
+                  <h5 class="card-title">Junior Suite</h5>
+                  <p class="card-text">Plass til 2 &bull; Queen size-seng</p>
+                  <p class="text-bold">
+                    <span class="badge">8.9</span> 59 anmeldelser
+                  </p>
+                  <p class="cart-midtext">2 394 kr</p>
+                  <p class="card-text">for 3 netter, 1 rom</p>
+                  <p class="card-text">2 263 kr per natt</p>
+                  <p class="card-text">Inkl. moms og avgifter</p>
+                </section>
+              </article>
+              <article class="room-card">
+                <img
+                  src="images/beach-6514331_640.jpg"
+                  alt="Room Image"
+                  class="room-image"
+                />
+                <section class="room-details">
+                  <h5 class="card-title">Junior Suite</h5>
+                  <p class="card-text">Plass til 2 &bull; Queen size-seng</p>
+                  <p class="text-bold">
+                    <span class="badge">8.9</span> 59 anmeldelser
+                  </p>
+                  <p class="cart-midtext">2 394 kr</p>
+                  <p class="card-text">for 3 netter, 1 rom</p>
+                  <p class="card-text">2 263 kr per natt</p>
+                  <p class="card-text">Inkl. moms og avgifter</p>
+                </section>
+              </article>
+              <article class="room-card">
+                <img
+                  src="images/beach-6514331_640.jpg"
+                  alt="Room Image"
+                  class="room-image"
+                />
+                <section class="room-details">
+                  <h5 class="card-title">Junior Suite</h5>
+                  <p class="card-text">Plass til 2 &bull; Queen size-seng</p>
+                  <p class="text-bold">
+                    <span class="badge">8.9</span> 59 anmeldelser
+                  </p>
+                  <p class="cart-midtext">2 394 kr</p>
+                  <p class="card-text">for 3 netter, 1 rom</p>
+                  <p class="card-text">2 263 kr per natt</p>
+                  <p class="card-text">Inkl. moms og avgifter</p>
+                </section>
+              </article>
+              <article class="room-card">
+                <img
+                  src="images/beach-6514331_640.jpg"
+                  alt="Room Image"
+                  class="room-image"
+                />
+                <section class="room-details">
+                  <h5 class="card-title">Junior Suite</h5>
+                  <p class="card-text">Plass til 2 &bull; Queen size-seng</p>
+                  <p class="text-bold">
+                    <span class="badge">8.9</span> 59 anmeldelser
+                  </p>
+                  <p class="cart-midtext">2 394 kr</p>
+                  <p class="card-text">for 3 netter, 1 rom</p>
+                  <p class="card-text">2 263 kr per natt</p>
+                  <p class="card-text">Inkl. moms og avgifter</p>
+                </section>
+              </article>
+            </section>
+          </section>
+        </section>
+        <section class="tab_content" id="facilities">
+          <h3>Facilities</h3>
+        </section>
+        <section class="tab_content" id="rooms">
+          <h3>Rooms</h3>
+        </section>
+        <!-- Tab Content -->
+      </section>
+    </main>
+    <footer>
+      <section class="footer-container">
+        <aside class="countries">
+          <span><img src="/flags/sweden.png" alt="Sweden" /> Sverige</span>
+          <span><img src="/flags/denmark.png" alt="Denmark" /> Danmark</span>
+          <span><img src="/flags/norway.png" alt="Norway" /> Norge</span>
+          <span><img src="/flags/sweden.png" alt="Finland" /> Suomi</span>
+          <span
+            ><img src="/flags/netherlands.png" alt="Netherlands" />
+            Nederland</span
+          >
+        </aside>
+        <!-- Payment Methods -->
+        <section class="footer-section payment-methods">
+          <h4>Betalingsmetoder</h4>
+          <aside class="icons">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-brands fa-apple-pay"></i>
+            <i class="fa-brands fa-amazon-pay"></i>
+          </aside>
+        </section>
+
+        <!-- Newsletter and Countries -->
+        <section class="footer-section newsletter">
+          <form>
+            <h4>Nyheter & Tilbud</h4>
+            <section class="input-group">
+              <h4>Meld deg på nyhetsbrev her</h4>
+              <input
+                type="email"
+                id="email"
+                placeholder="Abonner på nyhetsbrev her"
+              />
+              <button type="submit">Send</button>
+            </section>
+            <h4>Kjøp reisegavekort</h4>
+          </form>
+        </section>
+
+        <!-- Customer Service -->
+        <section class="footer-section customer-service">
+          <h4>Kundeservice</h4>
+          <ul>
+            <li><a href="#faq">Spørsmål og Svar</a></li>
+            <li><a href="#order">Ordre</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="#returns">Tilgjengelighetserklæring</a></li>
+          </ul>
+        </section>
+
+        <!-- Social Media -->
+        <section class="footer-section social-media">
+          <h4>Sosiale Medier</h4>
+          <aside class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </aside>
+        </section>
+      </section>
+    </footer>
+
+    <script>
+      // Tab functionality
+      const tabs = document.querySelectorAll(".tab")
+      const tabContents = document.querySelectorAll(".tab_content")
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", function () {
+          const targetTab = this.getAttribute("data-tab")
+
+          // Remove active class from all tabs and content
+          tabs.forEach((tab) => tab.classList.remove("active"))
+          tabContents.forEach((content) =>
+            content.classList.remove("active-content")
+          )
+
+          // Add active class to clicked tab and relevant content
+          this.classList.add("active")
+          document.getElementById(targetTab).classList.add("active-content")
+        })
+      })
+    </script>
+
+    <script>
+      const swiper = new Swiper(".swiper-container", {
+        loop: true, // Infinite loop
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        slidesPerView: 1,
+        spaceBetween: 10,
+        observer: true,
+        observeParents: true,
+      })
+
+      document
+        .querySelector(".menu-toggle")
+        .addEventListener("click", function () {
+          const navLinks = document.querySelector(".nav-links")
+
+          if (window.innerWidth < 767) {
+            navLinks.style.display =
+              navLinks.style.display === "flex" ? "none" : "flex"
+          }
+        })
+
+      // Ensure the nav-links is always visible on larger screens
+      window.addEventListener("resize", function () {
+        const navLinks = document.querySelector(".nav-links")
+        if (window.innerWidth >= 767) {
+          navLinks.style.display = "flex"
+        } else {
+          navLinks.style.display = "none"
+        }
+      })
+      const searchIcon = document.getElementById("search-icon")
+      const searchPanel = document.getElementById("search-panel")
+      const closeBtn = document.getElementById("close-btn")
+
+      // Open search panel
+      searchIcon.addEventListener("click", () => {
+        searchPanel.classList.add("active")
+      })
+
+      // Close search panel
+      closeBtn.addEventListener("click", () => {
+        searchPanel.classList.remove("active")
+      })
+
+      // Close search panel by clicking outside
+      window.addEventListener("click", (e) => {
+        if (
+          !searchPanel.contains(e.target) &&
+          !searchIcon.contains(e.target) &&
+          !e.target.closest("input")
+        ) {
+          searchPanel.classList.remove("active")
+        }
+      })
+    </script>
+  </body>
+</html>

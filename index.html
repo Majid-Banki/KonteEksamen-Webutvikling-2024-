@@ -2,10 +2,338 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hotel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <!-- FontAwesome -->
+
+    <link rel="stylesheet" href="style.css"/>
+    <link href="css/all.css" rel="stylesheet"/>
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        rel="stylesheet"
+        />
+</head>
+
 </head>
 <body>
-    
+ <!-- Header -->
+ <header>
+    <!-- Top Buttons -->
+    <section class="top-bar">
+        <section class="search-container">
+            <i class="fas fa-search search-icon" id="search-icon"></i>
+            <div class="search-panel" id="search-panel">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <h1>What are you looking for?</h1>
+            <div>
+                <input type="text" placeholder="Enter your keywords...">
+                <i class="fas fa-search"></i>
+            </div>
+            </div>
+        </section>
+      <button class="btn kontabtn">Opprett en konto</button>
+      <button class="btn "> <i class="fa-regular fa-circle-user"></i> <span>Min side</span></button>
+    </section>
+
+    <!-- Logo and Navigation -->
+    <section class="logo-nav">
+      <!-- Logo -->
+      <span class="logo">
+        <img src="images/fav.png" alt="Travel Logo">
+      </span>
+      
+      <aside class="for_mobile user_mbldetails">
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+      </aside>
+      
+      <!-- Navigation Links -->
+      <nav class="nav-links">
+        <ul>
+            <li><a href="#">Tips og inspirasjon</a></li>
+            <li><a href="/hotel.html">Hotell</a></li>
+            <li><a href="/">Fly</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+      </nav>
+    </section>
+  </header>
+
+  <div  class="forside_banner"></div>
+  <main>
+    <section class="side_banner">
+        <nav class="tabs">
+            <section class="tab active" data-target="tab-1"><i class="fa-solid fa-suitcase"></i> Fly + Hotell</section>
+            <section class="tab" data-target="tab-2"><i class="fa-solid fa-plane"></i> Fly</section>
+            <section class="tab" data-target="tab-3"><i class="fa-solid fa-city"></i> Storby</section>
+            <section class="tab" data-target="tab-4"><i class="fa-solid fa-person-skiing"></i> Ski</section>
+            <section class="tab" data-target="tab-5"><i class="fa-solid fa-map-location-dot"></i> Kombinasjonsreiser</section>
+        </nav>
+          <section id="tab-1" class="form-section active">
+            <form class="form-container">
+                <section class="form-group">
+                    <label for="from">Fra</label>
+                    <select id="from" name="from">
+                      <option value="Oslo">Oslo Lufthavn</option>
+                      <option value="Bergen">Bergen</option>
+                    </select>
+                </section>
+                  <section class="form-group">
+                    <label for="to">Til</label>
+                    <select id="to" name="to">
+                      <option value="Albania">Albania</option>
+                      <option value="France">France</option>
+                    </select>
+                  </section>
+                  <section class="form-group">
+                    <label for="duration">Reiselengde</label>
+                    <select id="duration" name="duration">
+                      <option value="1week">Mindre enn 1 uke</option>
+                      <option value="2weeks">Mindre enn 2 uker</option>
+                    </select>
+                  </section>
+                  <section class="form-group">
+                    <label for="date">Velg dato</label>
+                    <input type="date" id="date" name="date">
+                  </section>
+                  <section class="form-group">
+                    <label for="travelers">Antall reisende</label>
+                    <input type="number" id="travelers" name="travelers" min="1" value="2">
+                  </section>
+                  <button class="book-button" type="submit">Søk</button>
+            </form>
+          </section>
+          
+          <section id="tab-2" class="form-section">
+            <p>Content for Fly</p>
+          </section>
+          
+          <section id="tab-3" class="form-section">
+            <p>Content for Storby</p>
+          </section>
+          
+          <section id="tab-4" class="form-section">
+            <p>Content for Ski</p>
+          </section>
+          
+          <section id="tab-5" class="form-section">
+            <p>Content for Kombinasjonsreiser</p>
+          </section>
+    </section>
+    <section class="offer">
+        <!-- Offer image -->
+
+        <!-- Offer Details Section -->
+        <section class="offer-details">
+            <aside class="head">
+                <h1>Bestill sommerens beste uke</h1>
+            </aside>
+            <p>Fly + hotell, 7 dager</p>
+            <h2>Fra 3 298,-</h2>
+            
+        </section>
+        <button class="book-button">Bestill i dag</button>
+    </section>
+    <section class="offer-box">
+        <article class="offer-card">
+            <aside class="head">
+                <h2>Få eksklusive tilbud</h2>
+            </aside>
+            <p><a href="#">Logg inn/opprett konto og få rabattkoder <i class="fas fa-chevron-right"></i></a></p>
+        </article>
+
+        <article class="offer-card">
+            <aside class="head">
+                <h2>Billige restplasser</h2>
+            </aside>
+            <p><a href="#">Opptil 50% rabatt <i class="fas fa-chevron-right"></i></a></p>
+        </article>
+
+        <article class="offer-card">
+            <aside class="head">
+                <h2>Mars - spar opptil 5000,-</h2>
+            </aside>
+            <p><a href="#">Sikre deg et ferie kupp <i class="fas fa-chevron-right"></i></a></p>
+        </article>
+    </section>
+
+    <section class="trips">
+        <h2>Tips & inspirasjon</h2>
+        <section class="tips-inspiration">
+        <article class="card">
+            <aside class="head">
+                <span class="badge">Ukens Deal</span>
+            </aside>
+            <img src="images/beach-6514331_640.jpg" alt="Greeks favorites" class="card-image">
+            <section class="card-body">
+                <h2 class="card-title">Greske favoritter</h2>
+                <p class="card-text">Akkurat nå får du 1 000,- i rabatt per bestilling til bl.a. Parga, Sivota, Lefkas, Korfu og Kalamata i Hellas. Gjelder avreise i sommer 2025. Kampanjen er gyldig i perioden 3/1 - 12/1-2025. Bruk rabattkoden WEEKDEAL ved bestilling.</p>
+            </section>
+            <p class="abstext"><a href="">Fra Kr 3 970 <i class="fa-solid fa-arrow-right"></i></a></p>
+        </article>
+
+        <article class="card">
+            <img src="images/beach-6514331_640.jpg" alt="Sunshine deals" class="card-image">
+            <section class="card-body">
+                <h2 class="card-title">Solsinnspriser – bestill i dag!</h2>
+                <p class="card-text">Spar opptil 45%. Akkurat nå tilbyr vi billige vinterreiser til mange reisemål. Bestill vinterens høyeste uke i dag!</p>
+            </section>
+            <p class="abstext"><a href="">Fra Kr 3 970 <i class="fa-solid fa-arrow-right"></i></a></p>
+        </article>
+
+        <article class="card">
+            <img src="images/beach-6514331_640.jpg" alt="City Break" class="card-image">
+            <section class="card-body">
+                <h2 class="card-title">Storbyferie</h2>
+                <p class="card-text">Bestill en langhelg og unn deg en flott weekendreise i en storby der du selv velger reisemål, fly og nøye utvalgte hotell.</p>
+            </section>
+            <p class="abstext"><a href="">Fra Kr 3 970 <i class="fa-solid fa-arrow-right"></i></a></p>
+        </article>
+
+        <article class="card">
+            <img src="images/beach-6514331_640.jpg" alt="City Break" class="card-image">
+            <section class="card-body">
+                <h2 class="card-title">Storbyferie</h2>
+                <p class="card-text">Bestill en langhelg og unn deg en flott weekendreise i en storby der du selv velger reisemål, fly og nøye utvalgte hotell.</p>
+            </section>
+            <p class="abstext"><a href="">Fra Kr 3 970 <i class="fa-solid fa-arrow-right"></i></a></p>
+        </article>
+        <article class="card">
+            <img src="images/beach-6514331_640.jpg" alt="City Break" class="card-image">
+            <section class="card-body">
+                <h2 class="card-title">Storbyferie</h2>
+                <p class="card-text">Bestill en langhelg og unn deg en flott weekendreise i en storby der du selv velger reisemål, fly og nøye utvalgte hotell.</p>
+            </section>
+            <p class="abstext"><a href="">Fra Kr 3 970 <i class="fa-solid fa-arrow-right"></i></a></p>
+        </article>
+        <article class="card">
+            <img src="images/beach-6514331_640.jpg" alt="City Break" class="card-image">
+            <section class="card-body">
+                <h2 class="card-title">Storbyferie</h2>
+                <p class="card-text">Bestill en langhelg og unn deg en flott weekendreise i en storby der du selv velger reisemål, fly og nøye utvalgte hotell.</p>
+            </section>
+            <p class="abstext"><a href="">Fra Kr 3 970 <i class="fa-solid fa-arrow-right"></i></a></p>
+        </article>
+    </section>
+    </section>
+  </main>
+  <footer>
+    <section class="footer-container">
+        <aside class="countries">
+            <span><img src="/flags/sweden.png" alt="Sweden"> Sverige</span>
+            <span><img src="/flags/denmark.png" alt="Denmark"> Danmark</span>
+            <span><img src="/flags/norway.png" alt="Norway"> Norge</span>
+            <span><img src="/flags/sweden.png" alt="Finland"> Suomi</span>
+            <span><img src="/flags/netherlands.png" alt="Netherlands"> Nederland</span>
+          </aside>
+      <!-- Payment Methods -->
+      <section class="footer-section payment-methods">
+        <h4>Betalingsmetoder</h4>
+        <aside class="icons">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-brands fa-apple-pay"></i>
+            <i class="fa-brands fa-amazon-pay"></i>
+        </aside>
+      </section>
+  
+      <!-- Newsletter and Countries -->
+      <section class="footer-section newsletter">
+      
+        <form>
+          <h4>Nyheter & Tilbud</h4>
+          <section class="input-group">
+            <h4>Meld deg på nyhetsbrev her</h4>
+            <input type="email" id="email" placeholder="Abonner på nyhetsbrev her">
+            <button type="submit">Send</button>
+                
+          </section>
+          <h4>Kjøp reisegavekort</h4>
+         
+        </form>
+      </section>
+  
+      <!-- Customer Service -->
+      <section class="footer-section customer-service">
+        <h4>Kundeservice</h4>
+        <ul>
+          <li><a href="#faq">Spørsmål og Svar</a></li>
+          <li><a href="#order">Ordre</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+          <li><a href="#returns">Tilgjengelighetserklæring</a></li>
+        </ul>
+      </section>
+  
+      <!-- Social Media -->
+      <section class="footer-section social-media">
+        <h4>Sosiale Medier</h4>
+        <aside class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </aside>
+      </section>
+    </section>
+  </footer>
+  
+  <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+        const navLinks = document.querySelector('.nav-links');
+       
+        if (window.innerWidth < 767) { 
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        }
+        });
+
+        // Ensure the nav-links is always visible on larger screens
+        window.addEventListener('resize', function () {
+        const navLinks = document.querySelector('.nav-links');
+        if (window.innerWidth >= 767) {
+            navLinks.style.display = 'flex'; 
+        } else {
+            navLinks.style.display = 'none'; 
+        }
+        });
+</script>
+<script>
+    const tabs = document.querySelectorAll('.tab');
+    const sections = document.querySelectorAll('.form-section');
+  
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+  
+        sections.forEach(section => section.classList.remove('active'));
+        const target = tab.getAttribute('data-target');
+        document.getElementById(target).classList.add('active');
+      });
+    });
+    const searchIcon = document.getElementById('search-icon');
+  const searchPanel = document.getElementById('search-panel');
+  const closeBtn = document.getElementById('close-btn');
+
+  // Open search panel
+  searchIcon.addEventListener('click', () => {
+    searchPanel.classList.add('active');
+  });
+
+  // Close search panel
+  closeBtn.addEventListener('click', () => {
+    searchPanel.classList.remove('active');
+  });
+
+  // Close search panel by clicking outside
+  window.addEventListener('click', (e) => {
+    if (!searchPanel.contains(e.target) && !searchIcon.contains(e.target) && !e.target.closest('input')) {
+      searchPanel.classList.remove('active');
+    }
+  });
+  </script>
 </body>
 </html>
