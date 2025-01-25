@@ -14,11 +14,7 @@
       rel="stylesheet"
     />
     <!-- FontAwesome -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -38,16 +34,18 @@
           </div>
         </section>
         <button class="btn kontabtn">Opprett en konto</button>
-        <button class="btn">
+        <a href="/order.html" class="btn">
           <i class="fa-regular fa-circle-user"></i> <span>Min side</span>
-        </button>
+        </a>
       </section>
 
       <!-- Logo and Navigation -->
       <section class="logo-nav">
         <!-- Logo -->
         <span class="logo">
-          <img src="images/fav.png" alt="Travel Logo" />
+          <a href="/index.html"
+            ><img src="images/fav.png" alt="Travel Logo"
+          /></a>
         </span>
 
         <aside class="for_mobile user_mbldetails">
@@ -59,52 +57,53 @@
         <!-- Navigation Links -->
         <nav class="nav-links">
           <ul>
-            <li><a href="#">Tips og inspirasjon</a></li>
-            <li><a href="/hotel.html">Hotell</a></li>
-            <li><a href="/">Fly</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li><a href="/index.html#trips">Tips og inspirasjon</a></li>
+            <li><a href="/hotell.html">Hotell</a></li>
+            <li><a href="https://www.norwegian.no" target="_blank">Fly</a></li>
+            <li><a href="#footer">Kontakt</a></li>
           </ul>
         </nav>
       </section>
     </header>
     <main>
-      <section class="swiper-container">
-        <article class="swiper-wrapper">
-          <!-- Slide 1 -->
-          <section class="swiper-slide">
-            <section class="slider-item">
-              <img src="images/landscape-2016308_640.jpg" alt="Pool Image" />
-              <aside class="like-icon">
-                <i class="fas fa-heart"></i>
-              </aside>
-              <aside class="image-counter">
-                <i class="fas fa-images"></i> 49
-              </aside>
-            </section>
-          </section>
-          <!-- Slide 2 -->
-          <section class="swiper-slide">
-            <section class="slider-item">
-              <img src="images/landscape-2016308_640.jpg" alt="Pool Image" />
-              <aside class="like-icon">
-                <i class="fas fa-heart"></i>
-              </aside>
-              <aside class="image-counter">
-                <i class="fas fa-images"></i> 32
-              </aside>
-            </section>
-          </section>
-          <!-- Add more slides as needed -->
-        </article>
+      <section class="image-gallery">
+        <figure class="slider">
+          <article class="slide">
+            <img
+              src="images/landscape-2016308_640.jpg"
+              alt="Poolside Image 1"
+            />
 
-        <!-- Navigation buttons -->
-        <aside class="swiper-button-next"></aside>
-        <aside class="swiper-button-prev"></aside>
+            <button class="like-icon" aria-label="Like">
+              <span>&#10084;</span>
+            </button>
+            <span class="image-counter" aria-label="49 images"
+              ><i class="fas fa-images"></i> 49</span
+            >
+          </article>
+          <article class="slide">
+            <img
+              src="images/landscape-2016308_640.jpg"
+              alt="Poolside Image 2"
+            />
+            <button class="like-icon" aria-label="Like">
+              <span>&#10084;</span>
+            </button>
+            <span class="image-counter" aria-label="32 images"
+              ><i class="fas fa-images"></i> 32</span
+            >
+          </article>
+          <!-- Add more slides as needed -->
+        </figure>
+
+        <!-- Navigation -->
+        <button class="nav prev" aria-label="Previous Slide">&#8249;</button>
+        <button class="nav next" aria-label="Next Slide">&#8250;</button>
       </section>
 
       <section class="layout hide_mobile">
         <!-- Left Section -->
-        <article class="left-section">
+        <aside class="left-section">
           <figure class="big-image">
             <img
               src="images/landscape-2016308_640.jpg"
@@ -124,10 +123,10 @@
               class="small-image"
             />
           </figure>
-        </article>
+        </aside>
 
         <!-- Right Section -->
-        <article class="right-section">
+        <aside class="right-section">
           <figure class="top-images">
             <img
               src="images/beach-1836467_640.jpg"
@@ -147,31 +146,55 @@
               class="bottom-image"
             />
           </figure>
-        </article>
+        </aside>
       </section>
       <section class="main-tabs">
         <nav class="tabs">
-          <article class="tab active" id="overview-tab" data-tab="overview">
+          <section class="tab active" id="overview-tab" data-tab="overview">
             Oversikt
-          </article>
+          </section>
 
-          <article class="tab" id="facilities-tab" data-tab="facilities">
-            Fasiliteter
-          </article>
+          <section class="tab" id="facilities-tab" data-tab="facilities">
+            <a href="#fasiliteter">Fasiliteter</a>
+          </section>
 
-          <article class="tab" id="rooms-tab" data-tab="rooms">Rom</article>
+          <section class="tab" id="rooms-tab" data-tab="rooms">
+            <a href="#room-listing">Rom</a>
+          </section>
         </nav>
 
         <section class="tab_content active-content" id="overview">
           <section class="details">
             <section class="left_details">
               <h2>Parga Beach</h2>
+              <div class="rating-container">
+                <i
+                  class="fa-regular fa-sun sun-icon unfilled"
+                  data-value="1"
+                ></i>
+                <i
+                  class="fa-regular fa-sun sun-icon unfilled"
+                  data-value="2"
+                ></i>
+                <i
+                  class="fa-regular fa-sun sun-icon unfilled"
+                  data-value="3"
+                ></i>
+                <i
+                  class="fa-regular fa-sun sun-icon unfilled"
+                  data-value="4"
+                ></i>
+                <i
+                  class="fa-regular fa-sun sun-icon unfilled"
+                  data-value="5"
+                ></i>
+              </div>
               <p>
                 <span class="badge">8.9</span>
                 <span class="text-muted">Fantastisk</span>
               </p>
               <p><a href="#">Se alle anmeldelsene ></a></p>
-              <h2>Fasiliteter</h2>
+              <h2 id="fasiliteter">Fasiliteter</h2>
               <p>
                 Parga Beach tilbyr et tilsynelatende uuttømmelig utvalg av sport
                 og aktiviteter...
@@ -186,14 +209,13 @@
               </ul>
               <p><a href="#">Se alle anmeldelsene ></a></p>
             </section>
-            <section class="right_details">
+            <section class="right_details" id="maps">
               <h2>Utforsk området</h2>
               <aside class="map-container">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112136.7006817032!2d77.21014753906252!3d28.56159700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce40cab1c280f%3A0xb01aeeca930b6506!2sTownhouse%20OAK%20The%20ICS%20Hotel%20Okhla!5e0!3m2!1sen!2sin!4v1737091812722!5m2!1sen!2sin"
-                  width="100%"
                   height="350"
-                  style="border: 0"
+                  style="border: 0; width: 100%"
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
@@ -202,17 +224,14 @@
             </section>
           </section>
 
-          <section class="room-listing">
+          <section class="room-listing" id="room-listing">
             <article class="heading">
-              <ssection>
-                <h2>8733 kr</h2>
-                <p>2394 kr per natt</p>
-              </ssection>
-
-              <button class="btn btn-primary">Velg rom</button>
+              <section>
+                <h2>Velg rom</h2>
+              </section>
             </article>
 
-            <section class="room-cards">
+            <section class="room-cards" id="room-cards">
               <!-- Room 1 -->
               <article class="room-card">
                 <img
@@ -298,7 +317,7 @@
         <!-- Tab Content -->
       </section>
     </main>
-    <footer>
+    <footer id="footer">
       <section class="footer-container">
         <aside class="countries">
           <span><img src="/flags/sweden.png" alt="Sweden" /> Sverige</span>
@@ -317,8 +336,8 @@
             <i class="fa-brands fa-cc-visa"></i>
             <i class="fa-brands fa-cc-mastercard"></i>
             <i class="fa-brands fa-cc-paypal"></i>
-            <i class="fa-brands fa-apple-pay"></i>
-            <i class="fa-brands fa-amazon-pay"></i>
+            <i class="fa-brands fa-cc-apple-pay"></i>
+            <i class="fa-brands fa-cc-amazon-pay"></i>
           </aside>
         </section>
 
@@ -354,94 +373,24 @@
         <section class="footer-section social-media">
           <h4>Sosiale Medier</h4>
           <aside class="social-icons">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.pinterest.com/" target="_blank"
+              ><i class="fa-brands fa-pinterest"></i
+            ></a>
+            <a href="https://www.tiktok.com/" target="_blank"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><i class="fab fa-youtube"></i
+            ></a>
           </aside>
         </section>
       </section>
     </footer>
-
-    <script>
-      // Tab functionality
-      const tabs = document.querySelectorAll(".tab")
-      const tabContents = document.querySelectorAll(".tab_content")
-
-      tabs.forEach((tab) => {
-        tab.addEventListener("click", function () {
-          const targetTab = this.getAttribute("data-tab")
-
-          // Remove active class from all tabs and content
-          tabs.forEach((tab) => tab.classList.remove("active"))
-          tabContents.forEach((content) =>
-            content.classList.remove("active-content")
-          )
-
-          // Add active class to clicked tab and relevant content
-          this.classList.add("active")
-          document.getElementById(targetTab).classList.add("active-content")
-        })
-      })
-    </script>
-
-    <script>
-      const swiper = new Swiper(".swiper-container", {
-        loop: true, // Infinite loop
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        slidesPerView: 1,
-        spaceBetween: 10,
-        observer: true,
-        observeParents: true,
-      })
-
-      document
-        .querySelector(".menu-toggle")
-        .addEventListener("click", function () {
-          const navLinks = document.querySelector(".nav-links")
-
-          if (window.innerWidth < 767) {
-            navLinks.style.display =
-              navLinks.style.display === "flex" ? "none" : "flex"
-          }
-        })
-
-      // Ensure the nav-links is always visible on larger screens
-      window.addEventListener("resize", function () {
-        const navLinks = document.querySelector(".nav-links")
-        if (window.innerWidth >= 767) {
-          navLinks.style.display = "flex"
-        } else {
-          navLinks.style.display = "none"
-        }
-      })
-      const searchIcon = document.getElementById("search-icon")
-      const searchPanel = document.getElementById("search-panel")
-      const closeBtn = document.getElementById("close-btn")
-
-      // Open search panel
-      searchIcon.addEventListener("click", () => {
-        searchPanel.classList.add("active")
-      })
-
-      // Close search panel
-      closeBtn.addEventListener("click", () => {
-        searchPanel.classList.remove("active")
-      })
-
-      // Close search panel by clicking outside
-      window.addEventListener("click", (e) => {
-        if (
-          !searchPanel.contains(e.target) &&
-          !searchIcon.contains(e.target) &&
-          !e.target.closest("input")
-        ) {
-          searchPanel.classList.remove("active")
-        }
-      })
-    </script>
   </body>
 </html>

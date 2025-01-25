@@ -1,422 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-  <!-- FontAwesome -->
-
-    <link rel="stylesheet" href="style.css">
     <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    rel="stylesheet"
-  />
-    
-</head>
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome -->
 
-</head>
-<body>
- <!-- Header -->
- <header>
-    <!-- Top Buttons -->
-    <section class="top-bar">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Top Buttons -->
+      <section class="top-bar">
         <section class="search-container">
-            <i class="fas fa-search search-icon" id="search-icon"></i>
-            <div class="search-panel" id="search-panel">
+          <i class="fas fa-search search-icon" id="search-icon"></i>
+          <div class="search-panel" id="search-panel">
             <span class="close-btn" id="close-btn">&times;</span>
             <h1>What are you looking for?</h1>
             <div>
-                <input type="text" placeholder="Enter your keywords...">
-                <i class="fas fa-search"></i>
+              <input type="text" placeholder="Enter your keywords..." />
+              <i class="fas fa-search"></i>
             </div>
-            </div>
+          </div>
         </section>
-      <button class="btn kontabtn">Opprett en konto</button>
-      <button class="btn "> <i class="fa-regular fa-circle-user"></i> <span>Min side</span></button>
-    </section>
+        <button class="btn kontabtn">Opprett en konto</button>
+        <a href="/order.html" class="btn">
+          <i class="fa-regular fa-circle-user"></i> <span>Min side</span>
+        </a>
+      </section>
 
-    <!-- Logo and Navigation -->
-    <section class="logo-nav">
-      <!-- Logo -->
-      <span class="logo">
-        <img src="images/fav.png" alt="Travel Logo">
-      </span>
-      
-      <aside class="for_mobile user_mbldetails">
-        <button class="menu-toggle" aria-label="Toggle menu">
+      <!-- Logo and Navigation -->
+      <section class="logo-nav">
+        <!-- Logo -->
+        <span class="logo">
+          <a href="/index.html"
+            ><img src="images/fav.png" alt="Travel Logo"
+          /></a>
+        </span>
+
+        <aside class="for_mobile user_mbldetails">
+          <button class="menu-toggle" aria-label="Toggle menu">
             <i class="fa-solid fa-bars"></i>
-        </button>
-      </aside>
-      
-      <!-- Navigation Links -->
-      <nav class="nav-links">
-        <ul>
-            <li><a href="#">Tips og inspirasjon</a></li>
-            <li><a href="/hotel.html">Hotell</a></li>
-            <li><a href="/">Fly</a></li>
-            <li><a href="#">Kontakt</a></li>
-          </ul>
-      </nav>
-    </section>
-  </header>
-  <main>
-    <section class="breadcrumb">
-        <nav aria-label="Breadcrumb">
+          </button>
+        </aside>
+
+        <!-- Navigation Links -->
+        <nav class="nav-links">
           <ul>
-            <li><a href="#search">Søk</a></li>
-            <li><a href="#search-results">Søkeresultater</a></li>
-            <li><a href="#room-type">Romtype</a></li>
-            <li><a href="#flight">Fly</a></li>
-            <li><a href="#extras">Tillegg</a></li>
-            <li>Opplysninger</li>
+            <li><a href="/index.html#trips">Tips og inspirasjon</a></li>
+            <li><a href="/hotell.html">Hotell</a></li>
+            <li><a href="https://www.norwegian.no" target="_blank">Fly</a></li>
+            <li><a href="#footer">Kontakt</a></li>
           </ul>
         </nav>
       </section>
-  
+    </header>
+    <main>
+      <section class="breadcrumb">
+        <nav aria-label="Breadcrumb">
+          <ul>
+            <li><a href="/index.html">Søk</a></li>
+            <li><a href="/hotell.html">Søkeresultater</a></li>
+            <li><a href="/hotell.html">Romtype</a></li>
+            <li><a href="https://www.norwegian.no" target="_blank">Fly</a></li>
+            <li><a href="#extras">Tillegg</a></li>
+            <li><a href="">Opplysninger</a></li>
+            <li><a href="#footer">Bestill</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="back">
+        <a href="">Dine valg <i class="fa-solid fa-angle-right"></i></a>
+      </section>
       <section class="booking-details">
         <section class="head">Oppgi dine bestillingsopplysninger</section>
-        
+
         <article class="form-and-summary">
           <!-- Booking Form -->
-       
+
           <form class="booking-form" action="#" method="POST">
             <fieldset>
-                <h2>Voksen 18+ Hovedbestiller</h2>
-                <section class="form-row">
-                  <section class="form-group">
-                    <label for="first-name">Fornavn (ifølge pass):</label>
-                    <input type="text" id="first-name" name="first-name" required>
-                  </section>
-                  <section class="form-group">
-                    <label for="last-name">Etternavn (ifølge pass):</label>
-                    <input type="text" id="last-name" name="last-name" required>
-                  </section>
+              <h2>Voksen 18+ Hovedbestiller</h2>
+              <section class="form-row">
+                <section class="form-group">
+                  <label for="first-name">Fornavn (ifølge pass):</label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    required
+                  />
                 </section>
-      
-                <section class="form-row">
-                  <section class="form-group">
-                    <label for="dob-day">Fødselsdato:</label>
-                    <section class="dob-group">
-                      <select id="dob-day" name="dob-day" required>
-                        <option value="">DD</option>
-                        <!-- Options for day -->
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <!-- Add more options -->
-                      </select>
-                      <select id="dob-month" name="dob-month" required>
-                        <option value="">MM</option>
-                        <!-- Options for month -->
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <!-- Add more options -->
-                      </select>
-                      <select id="dob-year" name="dob-year" required>
-                        <option value="">ÅÅÅÅ</option>
-                        <!-- Options for year -->
-                        <option value="2023">2023</option>
-                        <option value="2022">2022</option>
-                        <!-- Add more options -->
-                      </select>
-                    </section>
-                  </section>
+                <section class="form-group">
+                  <label for="last-name">Etternavn (ifølge pass):</label>
+                  <input type="text" id="last-name" name="last-name" required />
                 </section>
-                <section class="form-row">
-                  <section class="form-group">
-                    <label>Kjønn:</label>
-                    <section class="radio-group">
-                      <input type="radio" id="female" name="gender" value="female" required>
-                      <label for="female">Kvinne</label>
-                      <input type="radio" id="male" name="gender" value="male" required>
-                      <label for="male">Mann</label>
-                    </section>
-                  </section>
-                </section>
-      
-                <section class="form-row">
-                  <section class="form-group">
-                    <label for="email">E-postadresse:</label>
-                    <input type="email" id="email" name="email" required>
-                  </section>
-                  <section class="form-group">
-                    <label for="phone">Telefonnummer:</label>
-                    <input type="tel" id="phone" name="phone" required>
-                  </section>
-                </section>
-      
-                <section class="form-row">
-                  <section class="form-group">
-                    <label for="address">Gateadresse:</label>
-                    <input type="text" id="address" name="address" required>
-                  </section>
-                  <section class="form-group">
-                    <label for="zip-code">Postnummer:</label>
-                    <input type="text" id="zip-code" name="zip-code" required>
-                  </section>
-                </section>
-      
-                <section class="form-row">
-                  <section class="form-group">
-                    <label for="city">Poststed:</label>
-                    <input type="text" id="city" name="city" required>
-                  </section>
-                  <section class="form-group">
-                    <label for="country">Land:</label>
-                    <select id="country" name="country" required>
-                      <option value="">Velg et land</option>
-                      <option value="norway">Norge</option>
-                      <option value="sweden">Sverige</option>
-                      <option value="denmark">Danmark</option>
+              </section>
+
+              <section class="form-row">
+                <section class="form-group">
+                  <label for="dob-day">Fødselsdato:</label>
+                  <section class="dob-group">
+                    <select id="dob-day" name="dob-day" required>
+                      <option value="">DD</option>
+                      <!-- Options for day -->
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <!-- Add more options -->
+                    </select>
+                    <select id="dob-month" name="dob-month" required>
+                      <option value="">MM</option>
+                      <!-- Options for month -->
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <!-- Add more options -->
+                    </select>
+                    <select id="dob-year" name="dob-year" required>
+                      <option value="">ÅÅÅÅ</option>
+                      <!-- Options for year -->
+                      <option value="2023">2023</option>
+                      <option value="2022">2022</option>
+                      <!-- Add more options -->
                     </select>
                   </section>
                 </section>
-              </fieldset>
-              
-            <fieldset>
-                <h2>Voksen 18+</h2>
-                <section class="form-row">
-                    <section class="form-group">
-                        <label for="first-name-2">Fornavn (ifølge pass):</label>
-                        <input type="text" id="first-name-2" name="first-name-2" required>
-                      </section>
-                      <section class="form-group">
-                        <label for="last-name-2">Etternavn (ifølge pass):</label>
-                        <input type="text" id="last-name-2" name="last-name-2" required>
-                      </section>
+              </section>
+              <section class="form-row">
+                <section class="form-group">
+                  <label>Kjønn:</label>
+                  <section class="radio-group">
+                    <input
+                      type="radio"
+                      id="female"
+                      name="gender"
+                      value="female"
+                      required
+                    />
+                    <label for="female">Kvinne</label>
+                    <input
+                      type="radio"
+                      id="male"
+                      name="gender"
+                      value="male"
+                      required
+                    />
+                    <label for="male">Mann</label>
+                  </section>
                 </section>
-                <section class="form-row">
-                    <section class="form-group">
-                      <label for="dob-day">Fødselsdato:</label>
-                      <section class="dob-group">
-                        <select id="dob-day" name="dob-day" required>
-                          <option value="">DD</option>
-                          <!-- Options for day -->
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <!-- Add more options -->
-                        </select>
-                        <select id="dob-month" name="dob-month" required>
-                          <option value="">MM</option>
-                          <!-- Options for month -->
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <!-- Add more options -->
-                        </select>
-                        <select id="dob-year" name="dob-year" required>
-                          <option value="">ÅÅÅÅ</option>
-                          <!-- Options for year -->
-                          <option value="2023">2023</option>
-                          <option value="2022">2022</option>
-                          <!-- Add more options -->
-                        </select>
-                      </section>
-                    </section>
+              </section>
+
+              <section class="form-row">
+                <section class="form-group">
+                  <label for="email">E-postadresse:</label>
+                  <input type="email" id="email" name="email" required />
+                </section>
+                <section class="form-group">
+                  <label for="phone">Telefonnummer:</label>
+                  <input type="tel" id="phone" name="phone" required />
+                </section>
+              </section>
+
+              <section class="form-row">
+                <section class="form-group">
+                  <label for="address">Gateadresse:</label>
+                  <input type="text" id="address" name="address" required />
+                </section>
+                <section class="form-group">
+                  <label for="zip-code">Postnummer:</label>
+                  <input type="text" id="zip-code" name="zip-code" required />
+                </section>
+              </section>
+
+              <section class="form-row">
+                <section class="form-group">
+                  <label for="city">Poststed:</label>
+                  <input type="text" id="city" name="city" required />
+                </section>
+                <section class="form-group">
+                  <label for="country">Land:</label>
+                  <select id="country" name="country" required>
+                    <option value="">Velg et land</option>
+                    <option value="norway">Norge</option>
+                    <option value="sweden">Sverige</option>
+                    <option value="denmark">Danmark</option>
+                  </select>
+                </section>
+              </section>
+            </fieldset>
+
+            <fieldset>
+              <h2>Voksen 18+</h2>
+              <section class="form-row">
+                <section class="form-group">
+                  <label for="first-name-2">Fornavn (ifølge pass):</label>
+                  <input
+                    type="text"
+                    id="first-name-2"
+                    name="first-name-2"
+                    required
+                  />
+                </section>
+                <section class="form-group">
+                  <label for="last-name-2">Etternavn (ifølge pass):</label>
+                  <input
+                    type="text"
+                    id="last-name-2"
+                    name="last-name-2"
+                    required
+                  />
+                </section>
+              </section>
+              <section class="form-row">
+                <section class="form-group">
+                  <label for="dob-day2">Fødselsdato:</label>
+                  <section class="dob-group">
+                    <select id="dob-day2" name="dob-day2" required>
+                      <option value="">DD</option>
+                      <!-- Options for day -->
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <!-- Add more options -->
+                    </select>
+                    <select id="dob-month2" name="dob-month2" required>
+                      <option value="">MM</option>
+                      <!-- Options for month -->
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <!-- Add more options -->
+                    </select>
+                    <select id="dob-year2" name="dob-year2" required>
+                      <option value="">ÅÅÅÅ</option>
+                      <!-- Options for year -->
+                      <option value="2023">2023</option>
+                      <option value="2022">2022</option>
+                      <!-- Add more options -->
+                    </select>
                   </section>
-                  <section class="form-row">
-                    <section class="form-group">
-                      <label>Kjønn:</label>
-                      <section class="radio-group">
-                        <input type="radio" id="female" name="gender" value="female" required>
-                        <label for="female">Kvinne</label>
-                        <input type="radio" id="male" name="gender" value="male" required>
-                        <label for="male">Mann</label>
-                      </section>
-                    </section>
+                </section>
+              </section>
+              <section class="form-row">
+                <section class="form-group">
+                  <label>Kjønn:</label>
+                  <section class="radio-group">
+                    <input
+                      type="radio"
+                      id="female2"
+                      name="gender"
+                      value="female"
+                      required
+                    />
+                    <label for="female">Kvinne</label>
+                    <input
+                      type="radio"
+                      id="male2"
+                      name="gender"
+                      value="male"
+                      required
+                    />
+                    <label for="male">Mann</label>
                   </section>
+                </section>
+              </section>
               <!-- Add more fields as necessary -->
             </fieldset>
-  
-            <button type="submit" class="submit-btn">Siste trinn <i class="fa-solid fa-arrow-right"></i></button>
+
+            <button type="submit" class="submit-btn">
+              Siste trinn <i class="fa-solid fa-arrow-right"></i>
+            </button>
           </form>
-  
+
           <!-- Booking Summary -->
           <aside class="booking-summary">
-            <img src="images/landscape-2016308_640.jpg" alt="Parga Beach">
+            <img src="images/landscape-2016308_640.jpg" alt="Parga Beach" />
             <h2>Parga Beach</h2>
             <div class="rating-container">
-                <i class="fa-regular fa-sun sun-icon unfilled" data-value="1"></i>
-                <i class="fa-regular fa-sun sun-icon unfilled" data-value="2"></i>
-                <i class="fa-regular fa-sun sun-icon unfilled" data-value="3"></i>
-                <i class="fa-regular fa-sun sun-icon unfilled" data-value="4"></i>
-                <i class="fa-regular fa-sun sun-icon unfilled" data-value="5"></i>
-              </div>
+              <i class="fa-regular fa-sun sun-icon unfilled" data-value="1"></i>
+              <i class="fa-regular fa-sun sun-icon unfilled" data-value="2"></i>
+              <i class="fa-regular fa-sun sun-icon unfilled" data-value="3"></i>
+              <i class="fa-regular fa-sun sun-icon unfilled" data-value="4"></i>
+              <i class="fa-regular fa-sun sun-icon unfilled" data-value="5"></i>
+            </div>
             <ul>
               <li><i class="fa-solid fa-location-dot"></i>Hellas, Parga</li>
-              <li><i class="fa-regular fa-calendar"></i> Man 5 mai - man 12 mai 2025</li>
+              <li>
+                <i class="fa-regular fa-calendar"></i> Man 5 mai - man 12 mai
+                2025
+              </li>
               <li><i class="fa-solid fa-user"></i> 2 Voksne</li>
-              <li><i class="fa-solid fa-bed"></i>Deluxerom, Balkong og ikke spesifisert utsikt</li>
+              <li>
+                <i class="fa-solid fa-bed"></i>Deluxerom, Balkong og ikke
+                spesifisert utsikt
+              </li>
               <li><i class="fa-solid fa-utensils"></i>Frokostbuffé</li>
-              <li><i class="fa-solid fa-plane-departure"></i> Oslo Lufthavn — Preveza</li>
+              <li>
+                <i class="fa-solid fa-plane-departure"></i> Oslo Lufthavn —
+                Preveza
+              </li>
             </ul>
             <p><strong>22 003,-</strong></p>
             <p>19 803,-</p>
           </aside>
         </article>
       </section>
-    
-    
-    
- 
-  </main>
-  <footer>
-    <section class="footer-container">
+    </main>
+    <footer id="footer">
+      <section class="footer-container">
         <aside class="countries">
-            <span><img src="/flags/sweden.png" alt="Sweden"> Sverige</span>
-            <span><img src="/flags/denmark.png" alt="Denmark"> Danmark</span>
-            <span><img src="/flags/norway.png" alt="Norway"> Norge</span>
-            <span><img src="/flags/sweden.png" alt="Finland"> Suomi</span>
-            <span><img src="/flags/netherlands.png" alt="Netherlands"> Nederland</span>
-          </aside>
-      <!-- Payment Methods -->
-      <section class="footer-section payment-methods">
-        <h4>Betalingsmetoder</h4>
-        <aside class="icons">
+          <span><img src="/flags/sweden.png" alt="Sweden" /> Sverige</span>
+          <span><img src="/flags/denmark.png" alt="Denmark" /> Danmark</span>
+          <span><img src="/flags/norway.png" alt="Norway" /> Norge</span>
+          <span><img src="/flags/sweden.png" alt="Finland" /> Suomi</span>
+          <span
+            ><img src="/flags/netherlands.png" alt="Netherlands" />
+            Nederland</span
+          >
+        </aside>
+        <!-- Payment Methods -->
+        <section class="footer-section payment-methods">
+          <h4>Betalingsmetoder</h4>
+          <aside class="icons">
             <i class="fa-brands fa-cc-visa"></i>
             <i class="fa-brands fa-cc-mastercard"></i>
             <i class="fa-brands fa-cc-paypal"></i>
-            <i class="fa-brands fa-apple-pay"></i>
-            <i class="fa-brands fa-amazon-pay"></i>
-        </aside>
+            <i class="fa-brands fa-cc-apple-pay"></i>
+            <i class="fa-brands fa-cc-amazon-pay"></i>
+          </aside>
+        </section>
+
+        <!-- Newsletter and Countries -->
+        <section class="footer-section newsletter">
+          <form>
+            <h4>Nyheter & Tilbud</h4>
+            <section class="input-group">
+              <h4>Meld deg på nyhetsbrev her</h4>
+              <input
+                type="email"
+                id="email2"
+                placeholder="Abonner på nyhetsbrev her"
+              />
+              <button type="submit">Send</button>
+            </section>
+            <h4>Kjøp reisegavekort</h4>
+          </form>
+        </section>
+
+        <!-- Customer Service -->
+        <section class="footer-section customer-service">
+          <h4>Kundeservice</h4>
+          <ul>
+            <li><a href="#faq">Spørsmål og Svar</a></li>
+            <li><a href="#order">Ordre</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="#returns">Tilgjengelighetserklæring</a></li>
+          </ul>
+        </section>
+
+        <!-- Social Media -->
+        <section class="footer-section social-media">
+          <h4>Sosiale Medier</h4>
+          <aside class="social-icons">
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.pinterest.com/" target="_blank"
+              ><i class="fa-brands fa-pinterest"></i
+            ></a>
+            <a href="https://www.tiktok.com/" target="_blank"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </aside>
+        </section>
       </section>
-  
-      <!-- Newsletter and Countries -->
-      <section class="footer-section newsletter">
-      
-        <form>
-          <h4>Nyheter & Tilbud</h4>
-          <section class="input-group">
-            <h4>Meld deg på nyhetsbrev her</h4>
-            <input type="email" id="email" placeholder="Abonner på nyhetsbrev her">
-            <button type="submit">Send</button>
-                
-          </section>
-          <h4>Kjøp reisegavekort</h4>
-         
-        </form>
-      </section>
-  
-      <!-- Customer Service -->
-      <section class="footer-section customer-service">
-        <h4>Kundeservice</h4>
-        <ul>
-          <li><a href="#faq">Spørsmål og Svar</a></li>
-          <li><a href="#order">Ordre</a></li>
-          <li><a href="#contact">Kontakt</a></li>
-          <li><a href="#returns">Tilgjengelighetserklæring</a></li>
-        </ul>
-      </section>
-  
-      <!-- Social Media -->
-      <section class="footer-section social-media">
-        <h4>Sosiale Medier</h4>
-        <aside class="social-icons">
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-tiktok"></i></a>
-        </aside>
-      </section>
-    </section>
-  </footer>
-  
-  <script>
-        document.querySelector('.menu-toggle').addEventListener('click', function () {
-        const navLinks = document.querySelector('.nav-links');
-       
-        if (window.innerWidth < 767) { 
-            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-        }
-        });
-
-        // Ensure the nav-links is always visible on larger screens
-        window.addEventListener('resize', function () {
-        const navLinks = document.querySelector('.nav-links');
-        if (window.innerWidth >= 767) {
-            navLinks.style.display = 'flex'; 
-        } else {
-            navLinks.style.display = 'none'; 
-        }
-        });
-</script>
-<script>
-    const suns = document.querySelectorAll('.sun-icon');
-    const ratingValue = document.querySelector('.rating-value');
-  
-    suns.forEach((sun, index) => {
-      sun.addEventListener('click', () => {
-        const rating = index + 1;
-  
-        // Update the rating value display
-        ratingValue.textContent = `Rating: ${rating}`;
-  
-        // Update the suns' filled state
-        suns.forEach((s, i) => {
-          if (i < rating) {
-            s.classList.remove('unfilled');
-            s.classList.add('fa-solid'); // Change to solid icon
-            s.classList.remove('fa-regular'); // Remove regular icon class
-          } else {
-            s.classList.add('unfilled');
-            s.classList.add('fa-regular'); // Change to regular icon
-            s.classList.remove('fa-solid'); // Remove solid icon class
-          }
-        });
-      });
-  
-
-      sun.addEventListener('mouseover', () => {
-        suns.forEach((s, i) => {
-          if (i <= index) {
-            s.classList.remove('unfilled');
-            s.classList.add('fa-solid'); 
-            s.classList.remove('fa-regular');
-          } else {
-            s.classList.add('unfilled');
-            s.classList.add('fa-regular'); 
-            s.classList.remove('fa-solid'); 
-          }
-        });
-      });
-  
-
-      sun.addEventListener('mouseleave', () => {
-        const currentRating = parseInt(ratingValue.textContent.split(': ')[1]) || 0;
-        suns.forEach((s, i) => {
-          if (i < currentRating) {
-            s.classList.remove('unfilled');
-            s.classList.add('fa-solid'); 
-            s.classList.remove('fa-regular'); 
-          } else {
-            s.classList.add('unfilled');
-            s.classList.add('fa-regular'); 
-            s.classList.remove('fa-solid'); 
-          }
-        });
-      });
-    });
-
-    const searchIcon = document.getElementById('search-icon');
-  const searchPanel = document.getElementById('search-panel');
-  const closeBtn = document.getElementById('close-btn');
-
-  // Open search panel
-  searchIcon.addEventListener('click', () => {
-    searchPanel.classList.add('active');
-  });
-
-  // Close search panel
-  closeBtn.addEventListener('click', () => {
-    searchPanel.classList.remove('active');
-  });
-
-  // Close search panel by clicking outside
-  window.addEventListener('click', (e) => {
-    if (!searchPanel.contains(e.target) && !searchIcon.contains(e.target) && !e.target.closest('input')) {
-      searchPanel.classList.remove('active');
-    }
-  });
-  </script>
-</body>
+    </footer>
+  </body>
 </html>
