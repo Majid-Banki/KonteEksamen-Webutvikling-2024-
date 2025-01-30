@@ -17,7 +17,7 @@ input[type="text"]::placeholder {
   font-family: "Montserrat", sans-serif;
 }
 header {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #e8e8e8;
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
@@ -83,8 +83,8 @@ section.top-bar .btn {
   font-size: 14px;
   padding: 5px 15px;
   border-radius: 20px;
-  color: #127f99;
-  border: 2px solid #127f99;
+  color: #027792;
+  border: 2px solid #027792;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
 }
@@ -184,9 +184,18 @@ section.main-tabs {
   padding: 40px 0;
 }
 nav.tabs {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #e8e8e8;
   gap: 30px;
   display: flex;
+  position: relative;
+}
+.arrow {
+  position: absolute;
+  right: 0;
+  top: 5%;
+  font-size: 20px;
+  font-weight: 500;
+  padding-right: 1%;
 }
 .main-tabs .tabs .tab.active {
   border-bottom: 5px solid #127f99;
@@ -234,7 +243,7 @@ button.btn.btn-primary {
   border-top-right-radius: 5px;
   width: 100%;
   height: auto;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #e8e8e8;
 }
 .room-card {
   background: #fff;
@@ -249,7 +258,7 @@ button.btn.btn-primary {
   padding: 20px 10px;
 }
 footer {
-  background-color: #1f1f1f;
+  background-color: #252525;
   color: #fff;
   padding: 40px 20px;
 }
@@ -307,7 +316,7 @@ p.cart-midtext {
   margin: 20px 0 0;
 }
 span.badge {
-  background: green;
+  background: #019101;
   padding: 5px;
   font-size: 12px;
   color: #fff;
@@ -444,7 +453,7 @@ figure.top-images img,
 
 .slide img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -604,7 +613,7 @@ figure.top-images img,
 
 .breadcrumb ul li[aria-current="page"] {
   font-weight: bold;
-  color: #333;
+  color: #252525;
 }
 
 .booking-details fieldset {
@@ -682,6 +691,52 @@ input[type="radio"] {
 .booking-summary {
   display: none;
 }
+.booking-summary2 {
+  margin: 1%;
+  background-color: white;
+}
+.booking-summary2 ul li {
+  margin-bottom: 10px;
+}
+.booking-summary2 {
+  flex: 1;
+  background: #fff;
+}
+.booking-summary2 img {
+  width: 100%;
+}
+.booking-summary2 {
+  display: block;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.booking-summary2 h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+.booking-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: 400px;
+}
+summary {
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bold;
+  align-items: center;
+  list-style: none;
+}
+
+summary i {
+  transition: transform 0.3s ease;
+}
+
+/* Rotate the arrow when expanded */
+details[open] summary i {
+  transform: rotate(90deg);
+}
 button.submit-btn {
   background: #f7b500;
   padding: 10px 20px;
@@ -699,7 +754,7 @@ button.submit-btn {
 }
 .back a {
   font-weight: 600;
-  color: #333;
+  color: #252525;
 }
 .offer {
   padding: 20px;
@@ -839,7 +894,7 @@ button.submit-btn {
 p.abstext a {
   position: absolute;
   bottom: 0px;
-  color: #333;
+  color: #252525;
   font-weight: 500;
   left: 10px;
   border-bottom: 3px solid #127f99;
@@ -1014,7 +1069,7 @@ p.abstext a {
 }
 .search-panel h1 {
   font-size: 28px;
-  color: #333;
+  color: #252525;
   margin-bottom: 20px;
 }
 .search-panel input[type="text"]:focus {
@@ -1027,7 +1082,7 @@ p.abstext a {
 .search-panel i {
   font-size: 20px;
   margin-left: 10px;
-  color: #333;
+  color: #252525;
   position: absolute;
   right: 0;
   top: 15px;
@@ -1046,7 +1101,7 @@ p.abstext a {
   top: 20px;
   right: 40px;
   font-size: 40px;
-  color: #333;
+  color: #252525;
   cursor: pointer;
 }
 .search-container .close-btn:hover {
@@ -1110,6 +1165,9 @@ p.abstext a {
     justify-content: flex-start;
     padding: 0;
     box-shadow: none;
+  }
+  .arrow {
+    display: none;
   }
   .top-bar {
     display: flex;
@@ -1283,6 +1341,12 @@ p.abstext a {
     flex: 2;
     background: #fff;
   }
+  summary {
+    display: none;
+  }
+  .booking-summary2 {
+    display: none;
+  }
   .booking-summary ul li {
     margin-bottom: 10px;
   }
@@ -1404,7 +1468,7 @@ p.abstext a {
   input[type="date"] {
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #e8e8e8;
     font-size: 1rem;
   }
 
