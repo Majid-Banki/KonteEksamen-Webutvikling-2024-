@@ -29,7 +29,7 @@
             class="search-panel"
             id="search-panel"
             role="dialog"
-            aria-labelledby="search-title"
+            aria-label="search-title"
             aria-hidden="true"
           >
             <span
@@ -58,7 +58,7 @@
         <!-- Logo -->
 
         <span class="logo">
-          <a href="/index.html"
+          <a href="index.html"
             ><img src="images/fav.png" alt="Travel Logo"
           /></a>
         </span>
@@ -68,7 +68,6 @@
             class="menu-toggle"
             aria-label="Toggle menu"
             aria-expanded="false"
-            aria-controls="nav-links"
           >
             <i class="fa-solid fa-bars"></i>
           </button>
@@ -89,64 +88,28 @@
     <div class="forside_banner"></div>
     <main>
       <section class="side_banner">
-        <nav class="tabs">
-          <section
-            class="tab active"
-            data-target="tab-1"
-            role="tab"
-            aria-selected="true"
-            tabindex="0"
-          >
+        <nav class="tabs" role="tablist">
+          <section class="tab active">
             <i class="fa-solid fa-suitcase"></i> Fly + Hotell
           </section>
-          <section
-            class="tab"
-            data-target="tab-2"
-            role="tab"
-            aria-selected="true"
-            tabindex="1"
-          >
+          <section class="tab">
             <a href="https://www.norwegian.no" target="_blank"
               ><i class="fa-solid fa-plane"></i> Fly</a
             >
           </section>
-          <section
-            class="tab"
-            data-target="tab-3"
-            role="tab"
-            aria-selected="true"
-            tabindex="2"
-          >
-            <i class="fa-solid fa-city"></i> Storby
-          </section>
-          <section
-            class="tab"
-            data-target="tab-4"
-            role="tab"
-            aria-selected="true"
-            tabindex="3"
-          >
+
+          <section class="tab"><i class="fa-solid fa-city"></i> Storby</section>
+          <section class="tab">
             <i class="fa-solid fa-person-skiing"></i> Ski
           </section>
-          <section
-            class="tab"
-            data-target="tab-5"
-            role="tab"
-            aria-selected="true"
-            tabindex="4"
-          >
+          <section class="tab">
             <i class="fa-solid fa-map-location-dot"></i> Kombinasjonsreiser
           </section>
+
+          <section class="arrow">
+            <i class="fas fa-chevron-right"></i>
+          </section>
         </nav>
-        <section
-          class="arrow"
-          data-target="tab-6"
-          role="tab"
-          aria-selected="true"
-          tabindex="5"
-        >
-          <i class="fas fa-chevron-right"></i>
-        </section>
         <section id="tab-1" class="form-section active">
           <form class="form-container">
             <section class="form-group">
@@ -402,7 +365,7 @@
           <span><img src="/flags/sweden.png" alt="Sweden" /> Sverige</span>
           <span><img src="/flags/denmark.png" alt="Denmark" /> Danmark</span>
           <span><img src="/flags/norway.png" alt="Norway" /> Norge</span>
-          <span><img src="/flags/material.png" alt="Finland" /> Finland</span>
+          <span><img src="/flags/sweden.png" alt="Finland" /> Suomi</span>
           <span
             ><img src="/flags/netherlands.png" alt="Netherlands" />
             Nederland</span
